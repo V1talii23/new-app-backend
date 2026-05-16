@@ -1,0 +1,14 @@
+-- AlterTable
+ALTER TABLE "Post" ADD COLUMN     "eventDate" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ADD COLUMN     "rating" INTEGER NOT NULL DEFAULT 10;
+
+-- CreateTable
+CREATE TABLE "LikedPosts" (
+    "id" TEXT NOT NULL,
+    "authorId" TEXT NOT NULL,
+    "postId" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "LikedPosts_pkey" PRIMARY KEY ("id")
+);
