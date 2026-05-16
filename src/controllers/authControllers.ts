@@ -1,5 +1,5 @@
 import { Response, Request } from "express";
-import { prisma } from "../../lib/prisma";
+import { prisma } from "../lib/prisma";
 import createHttpError from "http-errors";
 import bcrypt from "bcryptjs";
 import { generateJWT } from "../utils/generateJWT";
