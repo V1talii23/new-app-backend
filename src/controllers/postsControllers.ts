@@ -1,11 +1,11 @@
 import { Request, Response } from "express";
-import { prisma } from "../lib/prisma";
+import { prisma } from "../lib/prisma.js";
 import createHttpError from "http-errors";
 import { Prisma } from "@prisma/client";
 import {
   postCreateSchema,
   postSearchSchema,
-} from "../validations/postValidation";
+} from "../validations/postValidation.js";
 
 export const getAllPosts = async (req: Request, res: Response) => {
   const {

@@ -1,19 +1,19 @@
 import { Router } from "express";
-import authenticate from "../middleware/authenticate";
+import authenticate from "../middleware/authenticate.js";
 import {
   createPost,
   deletePost,
   getUserPosts,
   updatePost,
   getAllPosts,
-} from "../controllers/postsControllers";
-import validate from "../middleware/validateInput";
+} from "../controllers/postsControllers.js";
+import validate from "../middleware/validateInput.js";
 import {
   postCreateSchema,
   postIdSchema,
   postSearchSchema,
   postUpdateSchema,
-} from "../validations/postValidation";
+} from "../validations/postValidation.js";
 
 const router = Router();
 

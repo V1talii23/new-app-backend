@@ -1,8 +1,8 @@
 import { Response, Request } from "express";
-import { prisma } from "../lib/prisma";
+import { prisma } from "../lib/prisma.js";
 import createHttpError from "http-errors";
 import bcrypt from "bcryptjs";
-import { generateJWT } from "../utils/generateJWT";
+import { generateJWT } from "../utils/generateJWT.js";
 
 export const register = async (req: Request, res: Response) => {
   const { email, password, name } = req.body;

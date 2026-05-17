@@ -2,14 +2,12 @@ import cors from "cors";
 import helmet from 'helmet'
 import "dotenv/config";
 import express from "express";
-import authRoutes from "./routes/authRoutes";
-import userRoutes from "./routes/userRoutes";
-import postRoutes from "./routes/postRoutes";
-
-import notFoundHandler from "./middleware/notFound";
-import errorHandler from "./middleware/errorHandler";
+import authRoutes from "./routes/authRoutes.js";
+import postRoutes from "./routes/postRoutes.js";
+import notFoundHandler from "./middleware/notFound.js";
+import errorHandler from "./middleware/errorHandler.js";
 import rateLimit from 'express-rate-limit'
-import { logger } from "./middleware/logger";
+import { logger } from "./middleware/logger.js";
 
 
 
