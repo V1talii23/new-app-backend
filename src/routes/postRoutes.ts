@@ -17,9 +17,9 @@ import {
 
 const router = Router();
 
-router.get("/", validate(postSearchSchema,"params"), getAllPosts);
-
 router.use(authenticate);
+
+router.get("/", validate(postSearchSchema, "params"), getAllPosts);
 
 router.get("/my", getUserPosts);
 
