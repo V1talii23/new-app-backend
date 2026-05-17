@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 import { render } from "@react-email/render";
-import ResetPasswordEmail from "../templates/resetEmail.jsx";
+import ResetPasswordEmail from "../templates/resetEmail.js";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
